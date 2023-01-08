@@ -1,0 +1,90 @@
+-- import: gsalunke.github.io/import-issue/colors as cs
+
+
+-- ftd.type heading-small-desktop:
+size.px: 24
+weight: 400
+font-family: sans-serif
+line-height.px: 36
+letter-spacing.px: 0
+
+-- ftd.type heading-small-mobile:
+size.px: 24
+weight: 400
+font-family: sans-serif
+line-height.px: 36
+letter-spacing.px: 0
+
+-- ftd.responsive-type heading-small:
+desktop: $heading-small-desktop
+mobile: $heading-small-mobile
+
+
+-- ftd.type copy-relaxed-desktop:
+size.px: 16
+weight: 400
+font-family: sans-serif
+line-height.px: 24
+letter-spacing.px: 0
+
+-- ftd.type copy-relaxed-mobile:
+size.px: 16
+weight: 400
+font-family: sans-serif
+line-height.px: 24
+letter-spacing.px: 0
+
+-- ftd.responsive-type copy-relaxed:
+desktop: $copy-relaxed-desktop
+mobile: $copy-relaxed-mobile
+
+
+
+-- component h3:
+caption title:
+optional body body:
+
+-- ftd.column:
+width.fixed.percent: 100
+margin-top.px: 32
+margin-bottom.px: 16
+
+-- ftd.text:
+text: $h3.title
+role: $heading-small
+color: $cs.text-strong
+padding-bottom.px: 16
+padding-top.px: 8
+
+-- ftd.column:
+width.fixed.percent: 100
+margin-bottom.px if {$h3.body != NULL}: -26
+
+-- markdown:
+if: { $h3.body != NULL }
+body: $h3.body
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: h3
+
+
+
+
+
+
+
+
+
+-- component markdown:
+body body:
+
+-- ftd.text:
+text: $markdown.body
+role: $copy-relaxed
+color: $cs.text
+margin-bottom.px: 26
+
+-- end: markdown

@@ -1,1 +1,41 @@
--- ftd.text: Hello World
+-- import: gsalunke.github.io/import-issue/colors as cs
+-- import: gsalunke.github.io/import-issue/typography as tf
+
+
+
+-- ftd.column:
+background.solid: $cs.step-1
+width.fixed.percent: 100
+padding-horizontal.px: 100
+padding-vertical.px: 100
+
+-- my-text:
+
+This is the my text of `index.ftd` file
+
+
+-- tf.h3: This is heading level 3
+
+This is heading level 3 body.
+
+
+-- end: ftd.column
+
+
+
+
+
+
+
+
+
+
+-- component my-text:
+body body:
+
+-- ftd.text:
+text: $my-text.body
+color: $cs.text-strong
+role: $tf.copy-relaxed
+
+-- end: my-text

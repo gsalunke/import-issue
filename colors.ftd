@@ -1,0 +1,25 @@
+-- ftd.color base:
+light: #18181b
+dark: #18181b
+
+-- ftd.color step-1:
+light: #141414
+dark: #141414
+
+-- ftd.color step-2:
+light: #585656
+dark: #585656
+
+-- ftd.color code:
+light: #2B303B
+dark: #2B303B
+
+-- ftd.color text:
+light: #a8a29e
+dark: #a8a29e
+
+-- ftd.color text-strong:
+light: #ffffff
+dark: #ffffff
+
+
