@@ -2,12 +2,9 @@
 -- import: gsalunke.github.io/import-issue/typography as tf
 
 
+-- page: Some title of Page
 
--- ftd.column:
-background.solid: $cs.step-1
-width.fixed.percent: 100
-padding-horizontal.px: 100
-padding-vertical.px: 100
+Some body of the page
 
 -- my-text:
 
@@ -19,8 +16,50 @@ This is the my text of `index.ftd` file
 This is heading level 3 body.
 
 
+-- end: page
+
+
+
+
+
+
+
+
+-- component page:
+caption title: 
+optional body body:
+children container:
+
+-- ftd.column:
+background.solid: $cs.step-1
+width.fixed.percent: 100
+padding-horizontal.px: 48
+padding-vertical.px: 48
+
+-- ftd.column:
+spacing.px: 32
+width.fixed.percent: 100
+
+-- ftd.text: $page.title
+color: $cs.text-strong
+role: $tf.heading-small
+
+-- ftd.text: $page.body
+color: $cs.text-strong
+role: $tf.copy-relaxed
+
 -- end: ftd.column
 
+-- ftd.column:
+children: $page.container
+spacing.px: 32
+width.fixed.percent: 100
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: page
 
 
 
